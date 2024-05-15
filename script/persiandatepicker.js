@@ -207,7 +207,10 @@ function renderCalendar(m, thisDay, thisMonth, element, id) {
         changecalendarYear = document.querySelector(`#${id}Div .year-input`).value
         let newDateFormat = `${changecalendarYear}/${changecalendarMonth}/${currentDay || 1}`
         element.value = newDateFormat
-        calendarContainer.classList.add("hidden");
+
+        document.querySelector(`#${id}Div .calendar-change-body-year`).classList.add("hidden");
+        document.querySelector(`#${id}Div .calendar-body`).classList.remove("hidden");
+
         m  = moment(newDateFormat, 'jYYYY/jM/jD').locale('fa');
         renderCalendar(m, currentDay, changecalendarMonth, element, id);
     })
