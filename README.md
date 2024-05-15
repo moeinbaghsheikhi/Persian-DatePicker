@@ -16,13 +16,52 @@ A comprehensive and user-friendly Persian calendar package for web applications.
 
 ## Installation
 
-### Using CDN
+### Using DatePicker
 
-Include the following CSS and JS files in your HTML document:
+First import CSS File (style):
 
 ```html
-<link rel="stylesheet" href="https://cdn.example.com/persian-calendar/persian-calendar.css">
-<script src="https://cdn.example.com/persian-calendar/persian-calendar.js"></script>
+<link rel="stylesheet" href="./style/persiandatepicker.css">
+
+```
+
+Second import JS File (scripts):
+
+```html
+<script src="./script/jalali-moment.js"></script>
+<script src="./script/persiandatepicker.js"></script>
+
+```
+
+Second import JS File (scripts):
+
+```html
+<script src="./script/jalali-moment.js"></script>
+<script src="./script/persiandatepicker.js"></script>
+
+```
+
+Create input tag for calender:
+
+```html
+<input type="text" placeholder="انتخاب تاریخ">
+
+```
+
+set unique (id) attribute for input:
+
+```html
+<input type="text" id="firstCalendar" placeholder="انتخاب تاریخ">
+
+```
+
+now Start Calender with call newCalendar() function and submit unique id attribute:
+
+```html
+<script>
+    newCalendar('MyDatePicker')
+</script>
+
 ```
 
 ### Using npm
