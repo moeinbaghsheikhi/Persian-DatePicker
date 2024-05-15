@@ -61,6 +61,8 @@ now Start Calendar with call newCalendar() function and submit unique id attribu
 
 ```
 
+---
+
 
 ### Options
 
@@ -94,6 +96,8 @@ newCalendar('MyDatePicker',{
 })
 </script>
 ```
+
+---
 
 ### How use newCalendar() For Multi Tag?
 ```html
