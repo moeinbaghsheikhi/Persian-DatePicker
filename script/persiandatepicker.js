@@ -23,7 +23,7 @@ let primaryColor   = "#3498db"
 let darkMode     = false
 let closeCalendar= true
 
-function newCalendar(id, option = {isFullTitleDay:dayTitleFull, theme: primaryColor, darkMode: darkMode, closeCalendar: closeCalendar}){
+function newCalendar(id, option = {dayTitleFull:dayTitleFull, theme: primaryColor, darkMode: darkMode, closeCalendar: closeCalendar}){
     if(Array.isArray(id)) id.forEach((item)=>{
         createCalender(item, option)
     })
@@ -299,7 +299,7 @@ function getWeekDay(day) {
     return false;
 }
 function setOption(options){
-    dayTitleFull = options.isFullTitleDay || dayTitleFull
+    dayTitleFull = options.dayTitleFull || dayTitleFull
     primaryColor = options.theme || primaryColor
     darkMode     = options.darkMode || darkMode
     closeCalendar= options.closeCalendar || closeCalendar

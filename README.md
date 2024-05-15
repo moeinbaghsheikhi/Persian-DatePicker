@@ -80,7 +80,7 @@ This is an example of using newCalendar() by sending options
 ```html
 <script>
 newCalendar('MyDatePicker',{
-    isFullTitleDay: true,
+    dayTitleFull: true,
     darkMode: true,
     theme: "#86ac22",
     closeCalendar: false
