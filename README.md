@@ -33,37 +33,6 @@ Second import JS File (scripts):
 
 ```
 
-Second import JS File (scripts):
-
-```html
-<script src="./script/jalali-moment.js"></script>
-<script src="./script/persiandatepicker.js"></script>
-
-```
-
-Create input tag for calender:
-
-```html
-<input type="text" placeholder="انتخاب تاریخ">
-
-```
-
-set unique (id) attribute for input:
-
-```html
-<input type="text" id="firstCalendar" placeholder="انتخاب تاریخ">
-
-```
-
-now Start Calender with call newCalendar() function and submit unique id attribute:
-
-```html
-<script>
-    newCalendar('MyDatePicker')
-</script>
-
-```
-
 ### Using npm
 
 You can install the package via npm:
@@ -83,23 +52,29 @@ import PersianCalendar from 'persian-calendar-package';
 
 ### Basic Example
 
-Add a container for the calendar in your HTML:
+Create input tag for calender:
 
 ```html
-<div id="calendar-container"></div>
+<input type="text" placeholder="انتخاب تاریخ">
+
 ```
 
-Initialize the calendar in your JavaScript:
+set unique (id) attribute for input:
 
-```javascript
-document.addEventListener('DOMContentLoaded', function() {
-    const calendarContainer = document.getElementById('calendar-container');
-    const options = {
-        dayTitleFull: true // Use full day names (optional)
-    };
-    new PersianCalendar(calendarContainer, options);
-});
+```html
+<input type="text" id="MyDatePicker" placeholder="انتخاب تاریخ">
+
 ```
+
+now Start Calender with call newCalendar() function and submit unique id attribute:
+
+```html
+<script>
+    newCalendar('MyDatePicker')
+</script>
+
+```
+
 
 ### Options
 
@@ -116,32 +91,6 @@ The PersianCalendar class provides several methods for interaction:
 - `setYear(year)`: Set the calendar to a specific year.
 - `setMonth(month)`: Set the calendar to a specific month.
 - `getSelectedDate()`: Get the currently selected date.
-
-### Example with Methods
-
-```javascript
-document.addEventListener('DOMContentLoaded', function() {
-    const calendarContainer = document.getElementById('calendar-container');
-    const calendar = new PersianCalendar(calendarContainer);
-
-    // Navigate to the next month
-    document.getElementById('next-month-btn').addEventListener('click', function() {
-        calendar.nextMonth();
-    });
-
-    // Navigate to the previous month
-    document.getElementById('prev-month-btn').addEventListener('click', function() {
-        calendar.prevMonth();
-    });
-
-    // Set a specific year and month
-    calendar.setYear(1400);
-    calendar.setMonth(5);
-
-    // Get the currently selected date
-    console.log(calendar.getSelectedDate());
-});
-```
 
 ## Contributing
 
