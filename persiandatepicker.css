@@ -1,28 +1,4 @@
-@import url('https://db.onlinewebfonts.com/c/5c53f1a72f61b5b51e2ea79a22ebc38b?family=IRANSansWeb%28FaNum%29');
-
-@font-face {
-    font-family: "IRANSansWeb(FaNum)";
-    src: url("https://db.onlinewebfonts.com/t/5c53f1a72f61b5b51e2ea79a22ebc38b.eot");
-    src: url("https://db.onlinewebfonts.com/t/5c53f1a72f61b5b51e2ea79a22ebc38b.eot?#iefix")format("embedded-opentype"),
-    url("https://db.onlinewebfonts.com/t/5c53f1a72f61b5b51e2ea79a22ebc38b.woff2")format("woff2"),
-    url("https://db.onlinewebfonts.com/t/5c53f1a72f61b5b51e2ea79a22ebc38b.woff")format("woff"),
-    url("https://db.onlinewebfonts.com/t/5c53f1a72f61b5b51e2ea79a22ebc38b.ttf")format("truetype"),
-    url("https://db.onlinewebfonts.com/t/5c53f1a72f61b5b51e2ea79a22ebc38b.svg#IRANSansWeb(FaNum)")format("svg");
-}
-
-
-body, input{
-    direction: rtl;
-    font-family: "IRANSansWeb(FaNum)";
-}
-
-#whitecalendar{
-    position: relative;
-}
-
 .calendar-header {
-    /* background-color: #3498db;
-    color: #fff; */
     padding: 10px;
     text-align: center;
 }
@@ -64,18 +40,6 @@ body, input{
     cursor: pointer;
     font-size: 0.8rem;
 }
-
-/*.today, .selected {*/
-/*    background-color: #3498db;*/
-/*    color: #ffffff;*/
-/*}*/
-
-/*.calendar-btn{*/
-/*    background-color: #3498db;*/
-/*    color: #ffffff;*/
-/*    padding: 6px 9px;*/
-/*    border-radius: 5px;*/
-/*}*/
 
 .disabled {
     color: #aaa;
