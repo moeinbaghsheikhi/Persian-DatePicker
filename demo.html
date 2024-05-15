@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Persian Datepicker Demo</title>
+    <link rel="stylesheet" href="./persiandatepicker.css">
+    <style>
+        .container{
+            margin: 100px auto;
+            background-color: #ffffff;
+        }
+        input{
+            border-radius: 10px;
+            outline: unset;
+            border: none;
+            background-color: #f1f9ff;
+            padding: 10px 15px;
+        }
+        h2{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div style="display: flex;">
+        <div class="container">
+            <h2>دمو تقویم شمسی</h2>
+            <input type="text" id="MyDatePicker" placeholder="انتخاب تاریخ">
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/jalali-moment/dist/jalali-moment.browser.js"></script>
+    <script src="./persiandatepicker.js"></script>
+    <script>
+        newCalendar('MyDatePicker',{
+            darkMode: true,
+            theme: "#86ac22"
+        })
+    </script>
+</body>
+</html>

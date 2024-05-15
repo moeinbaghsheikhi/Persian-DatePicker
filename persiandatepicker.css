@@ -1,0 +1,143 @@
+@import url('https://db.onlinewebfonts.com/c/5c53f1a72f61b5b51e2ea79a22ebc38b?family=IRANSansWeb%28FaNum%29');
+
+@font-face {
+    font-family: "IRANSansWeb(FaNum)";
+    src: url("https://db.onlinewebfonts.com/t/5c53f1a72f61b5b51e2ea79a22ebc38b.eot");
+    src: url("https://db.onlinewebfonts.com/t/5c53f1a72f61b5b51e2ea79a22ebc38b.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/5c53f1a72f61b5b51e2ea79a22ebc38b.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/5c53f1a72f61b5b51e2ea79a22ebc38b.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/5c53f1a72f61b5b51e2ea79a22ebc38b.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/5c53f1a72f61b5b51e2ea79a22ebc38b.svg#IRANSansWeb(FaNum)")format("svg");
+}
+
+
+body, input{
+    direction: rtl;
+    font-family: "IRANSansWeb(FaNum)";
+}
+
+#whitecalendar{
+    position: relative;
+}
+
+.calendar-header {
+    /* background-color: #3498db;
+    color: #fff; */
+    padding: 10px;
+    text-align: center;
+}
+
+.calendar-body {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    padding: 10px;
+}
+
+.calendar-day {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid;
+    border-color: #e6e7f2;
+    text-align: center;
+    cursor: pointer;
+}
+
+.calendar-month-change{
+    font-size: 0.9rem;
+    width: 60px;
+    margin-top: 8px;
+    padding: 8px 10px;
+    border-radius: 5px;
+    border: 1px solid;
+    border-color: #e6e7f2;
+    text-align: center;
+    cursor: pointer;
+    display: inline-block;
+}
+.calendar-change-body{
+    margin: 20px 0;
+}
+
+
+.calendar-btn{
+    cursor: pointer;
+    font-size: 0.8rem;
+}
+
+/*.today, .selected {*/
+/*    background-color: #3498db;*/
+/*    color: #ffffff;*/
+/*}*/
+
+/*.calendar-btn{*/
+/*    background-color: #3498db;*/
+/*    color: #ffffff;*/
+/*    padding: 6px 9px;*/
+/*    border-radius: 5px;*/
+/*}*/
+
+.disabled {
+    color: #aaa;
+    pointer-events: none;
+}
+
+.day-title{
+    font-size: 0.9rem;
+    opacity: 0.5;
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+.day-full-title{
+    font-size: 0.65rem;
+}
+.calendar-arrow{
+    cursor: pointer;
+    background-color: unset;
+    border: unset;
+}
+
+.holiday{
+    color: rgb(255, 63, 63);
+}
+
+.hidden{
+    display: none;
+}
+
+#change-year-month{
+    cursor: pointer;
+}
+
+.year-input-parent {
+    display: flex;
+}
+.year-input{
+    display: inline-block;
+    border-radius: 5px;
+    padding: 10px 9px;
+    outline: none;
+    border: none;
+    background: #f0f0f0;
+    width: 60px;
+    text-align: center;
+}
+.inputs{
+    margin: 30px auto;
+}
+.calendar-btn-controlyear{
+    height: 38px;
+    width: 38px;
+    cursor: pointer;
+    outline: unset;
+    border: none;
+}
+
+.calendar-btn-apply{
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
