@@ -33,26 +33,12 @@ Second import JS File (scripts):
 
 ```
 
-### Using npm
-
-You can install the package via npm:
-
-```bash
-npm install persian-calendar-package
-```
-
-Then, import the package in your JavaScript file:
-
-```javascript
-import 'persian-calendar-package/dist/persian-calendar.css';
-import PersianCalendar from 'persian-calendar-package';
-```
 
 ## Usage
 
 ### Basic Example
 
-Create input tag for calender:
+Create input tag for Calendar:
 
 ```html
 <input type="text" placeholder="انتخاب تاریخ">
@@ -66,7 +52,7 @@ set unique (id) attribute for input:
 
 ```
 
-now Start Calender with call newCalendar() function and submit unique id attribute:
+now Start Calendar with call newCalendar() function and submit unique id attribute:
 
 ```html
 <script>
@@ -78,19 +64,45 @@ now Start Calender with call newCalendar() function and submit unique id attribu
 
 ### Options
 
-You can customize the calendar using the following options:
+You can send options parameters to newCalendar for settings and changes in the calendar:
 
 - `dayTitleFull`: (boolean) Display full names for day titles. Default is `false`.
+- `theme`: (string) Send a color or hex code. Default is `#3498db`.
+- `darkMode`: (boolean) set dark mode Calendar. Default is `false`.
+- `closeCalendar`: (boolean) Closing the calendar after clicking on the day. Default is `true`.
 
-### Methods
+### How send Options?
 
-The PersianCalendar class provides several methods for interaction:
+This is an example of using newCalendar() by sending options
 
-- `nextMonth()`: Navigate to the next month.
-- `prevMonth()`: Navigate to the previous month.
-- `setYear(year)`: Set the calendar to a specific year.
-- `setMonth(month)`: Set the calendar to a specific month.
-- `getSelectedDate()`: Get the currently selected date.
+```html
+<script>
+newCalendar('MyDatePicker',{
+    isFullTitleDay: true,
+    darkMode: true,
+    theme: "#86ac22",
+    closeCalendar: false
+})
+</script>
+```
+
+### How dark Mode calendar
+```html
+<script>
+newCalendar('MyDatePicker',{
+    darkMode: true
+})
+</script>
+```
+
+### How use newCalendar() For Multi Tag?
+```html
+<script>
+newCalendar(['MyDatePicker', 'MyDatePicker2'],{
+    darkMode: true
+})
+</script>
+```
 
 ## Contributing
 
@@ -98,12 +110,12 @@ We welcome contributions! If you find a bug or have a feature request, please op
 
 ## License
 
-This project is licensed under the MIT License.
-
 ---
 
-For detailed documentation, please visit our [GitHub repository](https://github.com/your-repo/persian-calendar-package).
+For detailed documentation, please visit our [GitHub repository](https://github.com/moeinbaghsheikhi/Persian-DatePicker).
 
 ---
 
 Enjoy using the Persian Calendar Package! If you have any questions or need support, feel free to contact us.
+(Telegram) @moeinbaghsheikhi
+(Email)    moein.baghsheikhi@gmail.com
